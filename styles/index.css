@@ -55,7 +55,7 @@ form input[type="email"] {
 input[type="number"] {
   border-left: #fff;
   margin-top: 1px;
-  width: 380px;
+  width: 370px;
 }
 #mobCode select {
   /* border: none; */
@@ -75,9 +75,9 @@ form button a {
   text-decoration: none;
   color: #fff;
 }
-@media only screen and (max-width: 576px) {
+/* @media only screen and (max-width: 576px) {
   #main-div {
-    /* display: flex; */
+    display: flex;
     width: 100%;
     flex-direction: column;
     padding: 8px;
@@ -97,7 +97,6 @@ form button a {
     margin: auto;
     font-size: 34px;
     margin-top: 10px;
-    /* text-align: center; */
   }
   #right-div #about {
     font-size: 23px;
@@ -105,5 +104,48 @@ form button a {
   form {
     width: 300px;
     margin-top: 20px;
+  }
+} */
+@media only screen and (max-width: 480px) {
+  #main-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* background-color: aqua; */
+    width: 100%;
+    margin: auto;
+  }
+  #left-div {
+    width: 100%;
+  }
+  #left-div img {
+    width: 300px;
+    display: block;
+    margin: auto;
+  }
+  #right-div {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  #form,
+  h1,
+  p {
+    width: 350px;
+  }
+  #right-div img {
+    width: 320px;
+  }
+  #form input[type="email"],
+  #form button {
+    width: 300px;
+  }
+  #form #mobCode {
+    width: 300px;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  #form input[type="number"] {
+    width: 245px;
   }
 }
